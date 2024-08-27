@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.homeButton {
+    font-weight: bold;
+    font-size:60px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top:auto;
+    background-color:rgb(153, 153, 218);
+    color: black;               /* Text color */
+    padding: 10px 15px;         /* Padding around the text */
+    display: inline-block;      /* Ensure the background fits around the text */
+    text-align: center;         /* Center the text within the element */
+    box-shadow: 0 0 0 5px black; /* Create a black outline around the text */
+    border-radius: 5px;    
+    
+}
+
+.homeButton:hover {
+    background-color: rgb(135, 221, 178)
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:aliceblue;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-200%); /* Start off-screen to the left */
+        opacity: 0; /* Start with invisible */
+    }
+    to {
+        transform: translateX(0); /* End at the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Apply the animation to the image */
+.slide-in {
+    animation: slideIn 1.5s ease-out forwards; /* 1 second animation duration */
+}
+
+/* General container styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title Styling */
+.section-title {
+    text-align: center;
+    font-weight:bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Intro paragraph styling */
+.intro {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* HR styling to ensure line stays separate */
+hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Section styling to ensure content stays underneath */
+.section {
+    margin-bottom: 30px;
+}
+
+/* Heading for education */
+.section h3 {
+    font-weight:bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Specific styling for educational section */
+.education h4,
+.experience h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Link Styling */
+a {
+    color: rgb(127, 127, 224);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+    
+    .section h3 {
+        font-size: 18px;
+    }
+    
+    .intro {
+        font-size: 14px;
+    }
+}
+

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.header {
+    text-align:center;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-200%); /* Start off-screen to the left */
+        opacity: 0; /* Start with invisible */
+    }
+    to {
+        transform: translateX(0); /* End at the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Apply the animation to the image */
+.slide-in {
+    animation: slideIn 1.5s ease-out forwards; /* 1 second animation duration */
+}
+
+.homeButton {
+    font-weight: bold;
+    font-size:60px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top:auto;
+    background-color:rgb(153, 153, 218);
+    color: black;               /* Text color */
+    padding: 10px 15px;         /* Padding around the text */
+    display: inline-block;      /* Ensure the background fits around the text */
+    text-align: center;         /* Center the text within the element */
+    box-shadow: 0 0 0 5px black; /* Create a black outline around the text */
+    border-radius: 5px;    
+    
+}
+
+.homeButton:hover {
+    background-color: rgb(135, 221, 178)
+}
+
+
+.bio {
+   text-align:center;
+
+   margin-top: 50px
+
+   
+}
+
+.ucla {
+    max-width: 100%; /* Ensure image scales to fit within the container */
+  height: auto;
+}
+
+.centercontainer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+
+    max-width: 100%; /* Ensure image scales within the container */
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+}
+
+.cat {
+    position:absolute;
+    margin-top: -750px;
+    transform: scale(0.3);
+
+}
+
+.cat2 {
+
+    transform: scale(0.3);
+    margin-top: -750px;
+}
+
+.cat3 {
+    width : 30%;
+    height : auto;
+
+    position: absolute; /* Fixes the image to the viewport */
+    bottom: 200px; /* Aligns image to the bottom */
+    left: 35%; 
+    
+}
+
+hr.line {
+  border: 10px solid rgb(153,153,218);
+  border-radius: 5px;
+}
+
+.catHeader{
+    text-align:center;
+    margin-top: 70px;
+    font-size: 80px;
+}
+
+
+body {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    background-color:aliceblue
+}

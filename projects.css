@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.homeButton {
+    font-weight: bold;
+    font-size:60px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top:auto;
+    background-color:rgb(153, 153, 218);
+    color: black;               /* Text color */
+    padding: 10px 15px;         /* Padding around the text */
+    display: inline-block;      /* Ensure the background fits around the text */
+    text-align: center;         /* Center the text within the element */
+    box-shadow: 0 0 0 5px black; /* Create a black outline around the text */
+    border-radius: 5px;    
+    
+}
+
+.homeButton:hover {
+    background-color: rgb(135, 221, 178)
+}
+
+
+body {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    background-color:aliceblue;
+}
+
+.projectsTitle {
+    text-align: center;
+    
+}
+
+.projectsIntro {
+    text-align: center;
+}
+
+.projectHeader {
+    margin-left:80px;
+    font-size: 30px;
+}
+
+.projectBio {
+    margin-left:80px;
+    font-style:italic;
+    font-weight: normal;
+}
+
+.projectText {
+    margin-left: 80px;
+    font-size: 25px;
+    width:70%;
+    font-weight: normal;
+}
+
+.projectImage {
+    border-radius: 30px;
+    width: 70%;
+    float:right;
+    margin-left:20px;
+
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-200%); /* Start off-screen to the left */
+        opacity: 0; /* Start with invisible */
+    }
+    to {
+        transform: translateX(0); /* End at the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Apply the animation to the image */
+.slide-in {
+    animation: slideIn 1.5s ease-out forwards; /* 1 second animation duration */
+}
